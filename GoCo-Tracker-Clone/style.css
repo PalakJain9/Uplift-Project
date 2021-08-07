@@ -1,0 +1,151 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    
+}
+
+header {
+    height: 1.5rem;
+    background-color: rgba(245,98,52,255);
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+nav {
+    background-color: rgba(249,165,139,255);
+    height: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.nav-logo img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 3rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+.home, .stats, .doctor, .stores, .admin {
+    transition: padding;
+    transition-duration: 0.8s;
+}
+
+.stats:hover, .doctor:hover, .stores:hover, .admin:hover {
+    padding: 0rem 1rem;
+    border-bottom: 0.05rem solid black;
+}
+
+.home:hover {
+    padding: 0rem 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-flex {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+.intro {
+    background-color: rgba(249,165,139,255);
+    height: 12rem;
+    width: 61%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 7rem;
+    line-height: 4rem;
+    color: rgb(44, 44, 44);
+}
+
+.intro span {
+    color: rgba(245,98,52,255);
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.intro-img {
+    width: 39%;
+    padding-top: 4rem;
+    margin-left: 5rem;
+}
+
+.intro-img img {
+    height: 24rem;
+}
+
+.intro-button { 
+    width: 61%; /*because covid-19 also has the same width. Then easily I can center the button*/
+    transform: translateY(-6rem) translateX(37%); /*in Y, -6rem because covid19 has height 12rem and img has 24rem (diff=12rem)
+    Since, we want to align button in center horizontally  with covid19 and vertically with doctor-image, so Y has -6rem*/
+    z-index: -1;
+}
+
+.intro-button button {
+    color: white;
+    background-color: rgba(245,98,52,255);
+    width: 10rem;
+    height: 3.8rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(245,98,52,255);
+    border-radius: 1rem;
+} 
+
+.below-hero {
+    margin: 3rem;
+    margin-top: 2.5rem;
+    border-top: 0.05rem solid rgba(245,98,52,255);
+    border-bottom: 0.1rem solid rgba(245,98,52,255);
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: space-between;
+}
+
+.virusimg {
+    padding: 1.5rem 0rem;
+}
+
+.virusimg img {
+    width: 23rem;
+    height: 23rem;
+    padding-left: 6rem;
+}
+
+.virus-info {
+    padding-right: 6rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.virus-info p {
+    font-size: 2.3rem;
+    padding: 3rem 0rem;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.virus-info span {
+    color: rgba(245,98,52,255);
+}
